@@ -152,6 +152,7 @@ foreach (example_source ${example_sources})
 
     # Setup the example
     add_executable(${example_name} ${example_source})
+    set_target_properties(${example_name} PROPERTIES FOLDER "examples")
 
     target_link_libraries(${example_name} raylib)
     if (NOT WIN32)

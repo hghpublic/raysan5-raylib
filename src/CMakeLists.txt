@@ -56,6 +56,7 @@ else ()
 endif ()
 
 add_library(raylib ${raylib_sources} ${raylib_public_headers})
+set_target_properties(raylib PROPERTIES FOLDER "raylib")
 
 if (NOT BUILD_SHARED_LIBS)
     MESSAGE(STATUS "Building raylib static library")

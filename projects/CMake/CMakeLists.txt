@@ -21,11 +21,16 @@ if (NOT raylib_FOUND) # If there's none, fetch and build raylib
   endif()
 endif()
 
+find_package(glfw3 CONFIG REQUIRED)
+
 # Our Project
 
 add_executable(${PROJECT_NAME} core_basic_window.c)
+# set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "projects")
+
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)
+target_link_libraries(${PROJECT_NAME} glfw)
 
 # Web Configurations
 if (${PLATFORM} STREQUAL "Web")
