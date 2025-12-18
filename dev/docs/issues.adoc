@@ -1,0 +1,15 @@
+= Issues
+
+
+== projects/CMake
+
+/workspaces/raysan5-raylib/projects/CMake/CMakeLists.txt
+[source, cmake]
+----
+[cmake] CMake Error at CMakeLists.txt:33 (if):
+[cmake]   if given arguments:
+[cmake] 
+[cmake]     "STREQUAL" "Web"
+[cmake] 
+[cmake]   Unknown arguments specified
+----
