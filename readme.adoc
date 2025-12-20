@@ -14,3 +14,11 @@ https://www.raylib.com/
 https://github.com/raysan5/raylib
 
 https://github.com/hghpublic/raysan5-raylib
+
+== GLFW
+
+https://www.glfw.org/
+
+=== GitHub
+
+https://github.com/glfw/glfw
